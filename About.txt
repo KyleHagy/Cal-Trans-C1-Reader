@@ -1,0 +1,46 @@
+The Design of the Board 
+-----------------------
+The board is designed to be physically cut in half and to be used as two seprate systems. However, most of the time the device will be 
+used in a dual configuration acting as a redundant system. The most basic representation of the device is that the connector 
+receives an input from traffic controller box to the 104 (4 are ground) connections on the C1 Connector (C11 Connector/Chip 5 can be used for more inputs). 
+Once a signal is received by the C1 Connector, the signal is then received by the MAX13362 as well. The MAX13362 then communicates with the 
+ESP32s through SPI and tells it which pin changed states (HIGH or LOW). This change of state is then time stamped using the 
+RTC with I2C and then that data is written to the SD Card over SPI. 
+
+Other notes: 
+• J4 and J8 are jumpers used for input power. (J8 is only used after the board is physically cut in half and is enabled by bridging the two holes with a wire on J9)
+• J12, J11, J10, J13, J14, J15 are jumpers used for external LEDs
+• J2 and J8 are used for excess connections (C11 Connector)
+• J3 and J7 are used to communicate with the connection of SPI & GIOP of the ESP32s, and extra pins on MAX13362
+
+
+The Why of a New C1 Reader
+-----------------------------
+The purpose of the C1 Reader Ver. 6.0 is to cut down costs and size of the previous C1 Reader design. By improving the ease 
+and time to assemble. By simply adding pre-soldered headers for simple plug in of the devices, eliminating the headache of 
+soldering. The previous design required excess soldering of wire between both bridges which took considerable amount of time.
+Adding already internal traces between both C1 connectors on the new board improves the time efficiently for assembling the 
+C1 reader and drops the requirement for soldering the ribbon cable. The old design also used a Raspberry Pi for the 
+redundant system that wrote to an external USB drive which took up space and required a networking switch. The new design 
+condensed this idea by replacing the need of previous devices just with an SD Card. The biggest improvement was getting rid 
+of the ethernet cable, networking switch, and computer that was used to communicate between the dual Rabbit microcontrollers 
+that was responsible for writing the data to a text file on the computer. Hooking up the computer to the controller required 
+a considerable amount of time to set up in the field and is now also replaced by the SD Card. 
+
+
+Old Design
+• 2 Boards
+• 2 ribbon cables
+• 2 Rabbits
+• 1 RTC
+• 1 Raspberry PI
+• 3 Ethernet cables
+• 1 Network switch
+• 1 LDO
+
+New Design
+• 1 Board (Can be cut in half)
+• 2 ESP32s
+• 2 RTC
+• 2 SD Cards
+• 2 LDO

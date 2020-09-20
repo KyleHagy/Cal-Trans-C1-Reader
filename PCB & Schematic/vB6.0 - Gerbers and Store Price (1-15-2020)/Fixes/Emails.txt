@@ -1,0 +1,36 @@
+﻿I’m sorry, I accidently send you the old part numbers that were out of stock. I updated the parts in the BOM but forgot to update them in the centroid, here are the new parts.
+
+Location 'J3, J7, MFG P/N: SSM-108-L-SV-LC
+
+https://www.newark.com/samtec/ssm-108-l-sv-lc/connector-receptacle-8-contacts/dp/81P4450?st=SSM-108-L-SV-LC
+
+
+Location U6, U19, U7, U20, MFG P/N: SSM-119-L-SV-LC
+
+https://www.newark.com/samtec/ssm-119-l-sv-lc/connector-receptacle-19-contacts/dp/81P6399
+
+Thanks for getting back to us. Let me know if you have any further questions.
+
+
+
+
+
+
+
+
+
+
+
+
+I just want to thank you a lot for being so helpful. Yes that is my mistake I sent the wrong version of the part.
+
+“PPTC122LFBN-RC “ is the correct part number for - Location 'J3, J7, MFG P/N
+
+For U6, U19, U7, U20 MFG P/N: Yes, we did not want locking clips. The correct version of that part should be “SSM-119-L-SV” Here are the links to the part.
+https://www.newark.com/samtec/ssm-119-l-sv/025-socket-strips-rohs-compliant/dp/11P7975?st=SSM-119-L-SV
+Second option: https://www.samtec.com/products/ssm-119-l-sv?utm_medium=referral&utm_source=octopart
+
+For U8, U16 I also noticed that the MFG P/N part we sent you uses locking clips, the correct part should be “SSM-108-L-SV” Here is the link to the part.
+https://www.newark.com/samtec/ssm-108-l-sv/board-board-connector-socket-8way/dp/11P7891?st=SSM-108-L-SV
+
+Thank you for noticing that. If you have any further questions let me know.

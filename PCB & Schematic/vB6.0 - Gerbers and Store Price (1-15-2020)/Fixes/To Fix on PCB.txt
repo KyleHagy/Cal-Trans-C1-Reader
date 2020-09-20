@@ -1,0 +1,8 @@
+- Update bom with new material - changed but need to export bom again
+- Number the "1 pins" on the board  - !
+- Update the parts in the centroid - Awaiting Joels Request
+- Label the U numbers on the board - ! 
+- Get rid of 3 unused traces - !
+- Fix SMD Pad sizes for capacitors and diode - ! but diode might stay
+- Git ride of 125 mil - made a post in readme
+- Parts HDR1x19 and HDR1x8 non locking chip - changed but need to export bom again
